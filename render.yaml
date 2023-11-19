@@ -1,0 +1,10 @@
+services:
+  - name: web
+    type: web
+    buildCommand: npm install
+    startCommand: npm start
+    env:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 18
