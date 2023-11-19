@@ -4,7 +4,7 @@ import { User } from './user/user.entity';
 require('dotenv').config();
 export const config: TypeOrmModuleOptions = {
   type: 'postgres',
-  port: parseInt(process.env.DB_PORT) || 3000,
+  port: parseInt(process.env.DB_PORT) ?? 3000,
   host: process.env.DB_HOST,
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
